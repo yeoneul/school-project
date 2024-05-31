@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kim Ha-yeon introduce</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+      $(document).ready(function () {
+            $('.nav-link').click(function () {
+                var target = $(this).data('target');
+                $('.content').hide();
+                $('#' + target).show();
+            });
+        });
+    </script>
+    <style>
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        body{
+            text-align: justify;
+            font-size: 16px;
+        }
+        h3{
+            margin-left: 10px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        p{
+            margin-top: 120px;
+            max-width: 610px;
+        }
+        a{
+            text-decoration: none;
+            color:slateblue;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li style="font-weight: bold;">Ha-yeon Kim</li>
+        <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-target="interest">Interest</a></li>
+        <li><a href="#" class="nav-link" data-target="goal">Goal</a></li>
+    </ul>
+    <div class="container">
+        <div class="row">
+        <div id="home" class="content">
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA1MzFfMTE5/MDAxNzE3MTQ4MTk1Mjcw.iUZ0EgV4udzGxEJnKqJNak0CTF896C7JQ6elQp95xbUg.Tuu-UOCKtdd-UGOGp2fTOGs9UN2a2MuEtg3D0yyu4UIg.PNG/1717148188157.png?type=w800"
+         width="200">
+            <h3>Home</h3>
+            <p>
+                저는 가운 고등학교를 졸업하여 현재 강원대학교 컴퓨터공학과 2학년에 재학 중인 학생으로,
+                그림 그리기와 게임 플레이를 취미로 가지고 있습니다.
+            </p>
+        </div>
+        <div id="interest" class="content" style="display: none;">
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA1MzFfMTE5/MDAxNzE3MTQ4MTk1Mjcw.iUZ0EgV4udzGxEJnKqJNak0CTF896C7JQ6elQp95xbUg.Tuu-UOCKtdd-UGOGp2fTOGs9UN2a2MuEtg3D0yyu4UIg.PNG/1717148188157.png?type=w800"
+         width="200">
+            <h3>Interest</h3>
+            <p>
+                취미 중 하나가 게임 플레이라고 소개했는데, 저는 게임을 플레이를 하며 
+                제가 구상한 그림과 스토리로 게임을 만들어 보고 싶다는 생각을 하게 되어
+                 컴퓨터 공학과에 진학하게 되었습니다.
+            </p>
+        </div>
+        <div id="goal" class="content" style="display: none;">
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA1MzFfMTE5/MDAxNzE3MTQ4MTk1Mjcw.iUZ0EgV4udzGxEJnKqJNak0CTF896C7JQ6elQp95xbUg.Tuu-UOCKtdd-UGOGp2fTOGs9UN2a2MuEtg3D0yyu4UIg.PNG/1717148188157.png?type=w800"
+         width="200">
+            <h3>Goal</h3>
+            <p>
+                 저는 게임 개발자로 제가 구상한 게임을 실제로 제작해 보고 싶습니다.
+                 대학을 졸업한 후에는 관련 회사에서 일하며 경험을 쌓고 더 먼 미래에는 그 경험을
+                 바탕으로 사람들이 즐겁게 할 수 있는 독창적인 게임을 만들고 싶습니다.
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
